@@ -1,0 +1,41 @@
+body {
+    width: 98vw;
+    margin: 0%;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    float: center;
+    margin-left: 0.7%;
+    padding-top: -2vh;
+    float: none;
+} 
+
+.nav-list {
+    padding-bottom: 0vh;
+}
+
+.text {
+    background-color: rgb(196, 244, 196);
+    padding-left: 2vw;
+    padding-top: 2vh;
+    margin-top: 0vh;
+    width: 98.5vw;
+}
+
+.text {
+    font-size: 150%;
+}
+
+#esa {
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 849px) {
+    .text {
+        width: 100vw;
+    }
+}
+

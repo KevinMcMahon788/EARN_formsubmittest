@@ -1,0 +1,648 @@
+body {
+    width: 98vw;
+    margin: 0%;
+}
+
+.main {
+    width: 97vw;
+    height: 100vh;
+    float: center;
+    margin-left: 0.7%;
+    padding-top: -2vh;
+    float: none;
+}
+
+.newsletters-list {
+    width: 98vw;
+    margin-top: 3vh;
+}
+
+.message-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3vw;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: .3vw solid green;
+}
+
+.message-item {
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+}
+
+p {
+    font-size: 1.6vw;
+    text-indent: 3vw;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    width: 96vw;
+    padding: 0 1vw;
+}
+
+.update-header {
+    margin-bottom: 0vh;
+}
+
+#update {
+    width: 96.5vw;
+    padding-right: 5vw;
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+}
+
+.splits {
+    display: flex;
+    flex-direction: row;
+    width: 96vw;
+    border: .3vw solid green; 
+}
+
+#points {
+    float: left;
+    width: 26vw;
+    height: 100%;
+    padding: 0 1vw;
+}
+
+#points-header {
+    text-align: center;
+}
+
+.points-each {
+    font-size: 1.6vw;
+    margin-bottom: 0vh;
+}
+
+#points p {
+    margin-top: .2vh;
+}
+
+#splits-body {
+    border-left: .3vw solid green;
+    width: 67%;
+    padding: 0 1vw;  
+}
+
+#splits-body h2 {
+    margin-bottom: 0vh;
+}
+
+#splits-body p {
+    margin-top: .2vh;
+}
+
+.thoughts-body {
+    width: 94vw;
+    border: .3vw solid green;
+    padding: 0 1vw;    
+}
+
+.thoughts-body h2 {
+    margin-bottom: 0vh;
+}
+
+.thoughts {
+    width: 93vw;
+    margin-top: .2vh;
+}
+
+/* iPad Air landscape */
+@media only screen and (max-width: 1190px) and (max-height: 830px) and (min-height: 810px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 102vw;
+        height: 4vh;
+    }
+
+    .newsletters-list li {
+        font-size: 2.2vh;
+        margin-top: .7vh;
+    }
+
+    .text {
+        width: 98.5vw;    
+    }
+
+    .text p {
+        font-size: 2.5vh;
+    }
+
+    .points-each {
+        font-size: 3vh;
+    }
+}
+
+/* iPad Air portrait */
+@media only screen and (max-width: 830px) and (max-height: 1190px) and (min-height: 1170px) {
+
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 102vw;
+        height: 4vh;
+    }
+
+    .newsletters-list li {
+        font-size: 2vh;
+        margin-top: .8vh;
+    }
+    .message-item {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    .text {
+        width: 98.5vw;
+        margin-left: .5vw;   
+    }
+
+    .text p {
+        font-size: 2.2vh;
+    }
+
+    .points-each {
+        font-size: 2.5vh;
+    }
+}
+
+/* iPad Mini landscape */
+@media only screen and (max-width: 1030px) and (max-height: 775px) and (min-height: 755px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 98vw;
+        height: 4vh;
+    }
+
+    .newsletters-list li {
+        font-size: 2.2vh;
+        margin-top: .7vh;
+    }
+
+    .text {
+        width: 95.5vw;    
+    }
+
+    .text p {
+        font-size: 2.5vh;
+    }
+
+    .points-each {
+        font-size: 3vh;
+    }
+}
+
+/* iPad Mini portrait */
+@media only screen and (max-width: 775px) and (max-height: 1030px) and (min-height: 1010px) {
+
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 102vw;
+        height: 4vh;
+    }
+
+    .newsletters-list li {
+        font-size: 2vh;
+        margin-top: .8vh;
+    }
+    .message-item {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    .text {
+        width: 98.5vw;
+        margin-left: .5vw;   
+    }
+
+    .text p {
+        font-size: 2.2vh;
+    }
+
+    .points-each {
+        font-size: 2.5vh;
+    }
+}
+
+/* Surface Pro 7 landscape */
+@media only screen and (max-width: 1380px) and (max-height: 920px) and (min-height: 900px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 101vw;
+        height: 4vh;
+    }
+
+    .newsletters-list li {
+        font-size: 2.5vh;
+        margin-top: .5vh;
+    }
+
+    .text {
+        width: 99vw;
+    }
+}
+
+/* Surface Pro 7 portrait */
+@media only screen and (max-width: 920px) and (max-height: 1380px) and (min-height: 1350px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 102vw;
+        height: 4vh;
+    }
+
+    .newsletters-list li {
+        font-size: 2vh;
+        margin-top: .8vh;
+    }
+
+    .message-item {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+        font-size: 1.8vh;
+        text-align: center;
+        margin-top: 0vh;
+    }
+
+    .text {
+        width: 99vw;
+    }
+
+    p {
+        font-size: 2vh;
+        text-indent: 3vw;
+    }
+
+    .points-each {
+        font-size: 2.2vh;
+    }
+}
+
+/* Samsung S8 landscape */
+@media only screen and (max-width: 750px) and (max-height: 370px) and (min-height: 350px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 98vw;
+        height: 7vh;
+    }
+
+    .newsletters-list li {
+        font-size: 4vh;
+        margin-top: 1vh;
+    }
+
+    p {
+        font-size: 4.5vh;
+        text-indent: 3vw;
+    }
+
+    .points-each {
+        font-size: 4.8vh;
+    }
+
+    .text {
+        width: 94vw;
+    }
+}
+
+/* Samsung S8 portrait */
+@media only screen and (max-width: 370px) and (max-height: 750px) and (min-height: 730px) {
+    .newsletters-list {
+        height: 3vh;
+        margin-top: 2vh;
+    }
+
+    .newsletters-list li {
+        font-size: 1.3vh;
+        margin-top: 1vh;
+    }
+
+    .message-list li {
+        font-size: 1.3vh;
+    }
+
+    .text {
+        width: 100vw;    
+    }
+
+    p {
+        font-size: 1.5vh;
+    }
+
+    .points-each {
+        font-size: 1.8vh;
+    }
+
+    .text h2 {
+        font-size: 2.5vh;
+    }    
+}
+
+/* Samsung Galaxy A51 and S20 landscape */
+@media only screen and (max-width: 920px) and (max-height: 420px) and (min-height: 400px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 98vw;
+        height: 6vh;
+    }
+
+    .newsletters-list li {
+        font-size: 3.3vh;
+        margin-top: 1vh;
+    }
+
+    .message-item {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+        font-size: 4.5vh;
+        text-align: center;
+        margin-top: 0vh;
+    }
+
+    .text {
+        width: 92vw;
+        margin-left: 2vw;
+    }
+
+    .text p {
+        font-size: 3.7vh;
+    }
+
+    .points-each {
+        font-size: 5vh;
+    }
+}
+
+/* Samsung Galaxy A51 and S20 portrait */
+@media only screen and (max-width: 420px) and (max-height: 920px) and (min-height: 900px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 98.5vw;
+        height: 3vh;
+    }
+
+    .newsletters-list li {
+        font-size: 1.7vh;
+        margin-top: .2;
+    }
+
+    .message-list {
+        height: 2.5vh;
+        margin-top: 0vh;
+    }
+
+    .message-list li {
+        font-size: 1.3vh;
+    }
+
+    .text {
+        width: 94vw;
+    }
+
+    .text p {
+        font-size: 1.6vh;
+    }
+
+    .points-each {
+        font-size: 1.8vh;
+    }
+}
+
+/* Samsung Galaxy Fold landscape */
+@media only screen and (max-width: 725px) and (max-height: 520px) and (min-height: 500px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 98vw;
+        height: 5vh;
+    }
+
+    .newsletters-list li {
+        font-size: 3vh;
+        margin-top: 1vh;
+    }
+
+    .message-item {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+        font-size: 3.5vh;
+        text-align: center;
+        margin-top: 0vh;
+    }
+
+    .text {
+        width: 94.5vw;
+    }
+
+    .text p {
+        font-size: 3.3vh;
+        text-indent: 3vw;
+    }
+
+    .points-each {
+        font-size: 3.6vh;
+    }
+}
+
+/* Samsung Galaxy Fold portrait */
+@media only screen and (max-width: 520px) and (max-height: 725px) and (min-height: 705px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 98vw;
+        height: 3.7vh;
+    }
+
+    .newsletters-list li {
+        font-size: 2vh;
+        margin-top: .7vh;
+    }
+
+    .message-item {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+        font-size: 3.8vh;
+        text-align: center;
+        margin-top: 0vh;
+    }
+
+    .text p {
+        font-size: 3.6vh;
+        text-indent: 3vw;
+    }
+}
+
+/* Samsung Surface Duo landscape */
+@media only screen and (max-width: 725px) and (max-height: 545px) and (min-height: 525px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 98vw;
+        height: 4vh;
+    }
+
+    .newsletters-list li {
+        font-size: 2.3vh;
+        margin-top: .7vh;
+    }
+
+    .message-item {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+        font-size: 3vh;
+        text-align: center;
+        margin-top: 0vh;
+    }
+
+    .text {
+        width: 94.5vw;
+    }
+
+    .text p {
+        font-size: 2.8vh;
+    }
+
+    .points-each {
+        font-size: 3.5vh;
+    }
+}
+
+/* Samsung Surface Duo portrait */
+@media only screen and (max-width: 550px) and (max-height: 725px) and (min-height: 705px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 98.5vw;
+        height: 3vh;
+    }
+
+    .newsletters-list li {
+        font-size: 2vh;
+        margin-top: .3vh;
+    }
+
+    .message-item {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+        font-size: 2vh;
+        text-align: center;
+        margin-top: 0vh;
+    }
+
+    .text {
+        width: 94.5vw;
+    }
+
+    .text p {
+        font-size: 2vh;
+    }
+
+    .points-each {
+        font-size: 2.5vh;
+    }
+}
+
+/* Google Pixel 5 landscape */
+@media only screen and (max-width: 860px) and (max-height: 400px) and (min-height: 380px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 99vw;
+        height: 6vh;
+    }
+
+    .newsletters-list li {
+        font-size: 3.3vh;
+        margin-top: 1vh;
+    }
+
+    .message-item {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+        font-size: 4vh;
+        text-align: center;
+        margin-top: 0vh;
+    }
+
+    .text {
+        width: 96.5vw;
+    }
+
+    .text p {
+        font-size: 3.8vh;
+    }
+
+    .points-each {
+        font-size: 4.5vh;
+    }
+}
+
+/* Google Pixel 5 portrait */
+@media only screen and (max-width: 400px) and (max-height: 860px) and (min-height: 840px) {
+    .newsletters-list {
+        margin-top: 2vh;
+        width: 98.5vw;
+        height: 3vh;
+    }
+
+    .newsletters-list li {
+        font-size: 1.5vh;
+        margin-top: .3vh;
+    }
+
+    .message-list {
+        height: 2.8vh
+    }
+
+    .message-item {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+        font-size: 1.5vh;
+        text-align: center;
+        margin-top: -0.3vh;
+        padding-bottom: 1vh;
+    }
+
+    .text {
+        width: 96.5vw;
+    }
+
+    .text p {
+        font-size: 1.7vh;
+    }
+
+    .points-each {
+        font-size: 1.8vh;
+    }
+}
+
+/* iPhone 12 portrait */
+@media only screen and (max-width: 400px) and (max-height: 850px) and (max-height: 830px) {
+    .newsletters-list li {
+        font-size: 1.3vh;
+        margin-top: 1vh;
+    }
+
+    .text {
+        width: 92.5vw;    
+    }
+
+    .text h2 {
+        font-size: 2.5vh;
+    }    
+}
+

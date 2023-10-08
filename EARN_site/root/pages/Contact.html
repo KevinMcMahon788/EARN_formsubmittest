@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <title>EARN - Contact Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/css/home.css">
+        <link rel="stylesheet" href="../styles/css/header.css">
+        <link rel="stylesheet" href="../styles/css/components.css">
+        <link rel="stylesheet" href="../styles/css/contact.css">
+    </head>
+    <body>
+        <main class="main">
+            <!--static for all pages-->
+            <div class="header-box">
+                <div class="header-text">
+                    <p>Environmental  Advancement<br>
+                        Reintegration  Network
+                    </p> 
+                </div>  
+                <div class="logo-image-right">
+                    <img src="../images/logo-tree.jpg" alt="LogoTree" class="logo">        
+                </div>
+            </div>
+            <ul class="nav-list" id="contact-nav">
+                <li class="nav-item">
+                    <a href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/farm.html">Farm</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/bridge.html">Bridge</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/refuge.html">Refuge</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/newsletter.html">Newsletters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/donate.html">Donate</a>
+                </li>
+            </ul>
+            <!--end static-->
+            <div class="container">
+                <div id="title">
+                    <h2 class="block-title">Email us at info@earnlife.org,</h2>
+                    <h2 class="block-title">or for inquiries/requests:</h2>
+                    <h2 class="line-title">Email us at info@earnlife.org, or for inquiries/requests:</h2>
+                </div>
+                <form action="https://formsubmit.co/info@earnlife.org" method="POST">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="text" id="org" placeholder="Organization (optional)">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="phone" id="phone" placeholder="Contact Phone (optional)">
+                    <textarea id="message" cols="1" rows="6" placeholder="How can EARN help you?" required></textarea>
+                    <button type="submit" id="Submit">Submit</button>
+                </form>
+            </div>
+        </main>
+        <!--<script src="https://smtpjs.com/v3/smtp.js"></script>-->
+        <script>
+            
+            
+            
+            function sendEmail(){
+                var message = document.getElementById("message").value;
+                alert("Message: " + message);
+                /*var Host = "smtp-mail.outlook.com"
+                var Username = "info@earnlife.org"
+                var Password = "WormDude2023!"
+                var To = 'info@earnlife.org'
+                var From = document.getElementById("email").value
+                var Subject = "New Contact Inquiry"
+                var Body = "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+            .then(
+            message => alert(Body)
+            );*/  
+            }
+        </script>
+    </body>

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EARN Life</title>
+        <link rel="stylesheet" href="../styles/css/home.css">
+        <link rel="stylesheet" href="../styles/css/header.css">
+        <link rel="stylesheet" href="../styles/css/components.css">
+        <link rel="stylesheet" href="../styles/css/contact.css">
+    </head>
+    <body>
+        <main class="main">
+            <!--static for all pages-->
+            <div class="header-box">
+                <div class="header-text">
+                    <p>Environmental  Advancement<br>
+                        Reintegration  Network
+                    </p> 
+                </div>  
+                <div class="logo-image-right">
+                    <img src="../images/logo-tree.jpg" alt="LogoTree" class="logo">        
+                </div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">The Farm</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/bridge.html">The Bridge</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/refuge.html">The Refuge</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/newsletter.html">Newsletters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/about.html">About Us</a>
+                </li>
+            </ul>
+            <!--end static-->
+            <div class="container">
+                <form onsubmit="sendEmail(); reset(); return false"><h2>Email us at info@earnlife.org</h2><br>
+                    <h2>Or for inquiries and requests:</h2>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" cols="1" rows="4" placeholder="How can EARN help you?" required></textarea>
+                    <button type="submit" id="Submit">Submit</button>
+                </form>
+            </div>
+        </main>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                Host : "smtp-mail.outlook.com",
+                Username : "info@earnlife.org",
+                Password : "WormDude2023!",
+                To : 'infoearnlife.org',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Inquiry",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert(message)
+            );  
+            }
+        </script>
+    </body>

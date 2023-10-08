@@ -1,0 +1,300 @@
+.header-box {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.logo-image-left, .logo-image-right {
+  width: 25vw;
+  height: 17vh;
+}
+
+.logo {
+  vertical-align: middle;
+  height: 16vh;
+  margin-left: 5vw;
+}
+
+.header-text {
+  width: 73vw;
+  height: 16vh;
+  text-align: center;
+  font-family: "Lucida Handwriting", serif;
+  font-weight: bold;
+  color: green;
+}
+
+.header-text p {
+  margin: 0;
+  padding-top: 2vh;
+  font-size: 3vw;
+  line-height: 6.5vh;
+  text-shadow: .2vw 0.3vh 0.3vw black;
+}
+
+.nav {
+  overflow: hidden;
+}
+
+.nav-list {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 6.5vh;
+  width: 100vw;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: blue;
+  margin-top: 0vh;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#contact-nav {
+  width: 100vw;
+}
+
+.nav-item {
+  float: left;
+  font-size: 3vh;
+}
+
+.nav-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0 2.5vw 0 5vw;
+  padding-top: 1.2vh;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  font-weight: bold;
+}
+
+.newsletters {
+  width: 99vw;
+  margin-top: -2vh;
+  padding: 0;
+}
+
+.newsletters-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 2vw;
+  width: 99vw;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0vh;
+  overflow: hidden;
+  background-color: bisque;
+}
+
+.newsletter-item {
+  float: left;
+  width: 100%;
+  font-weight: normal;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+/* Surface Pro 7 landscape */
+@media only screen and (max-width: 1380px) and (max-height: 920px) {
+  .header-box {
+    width: 100vw;
+  }
+
+  .nav-list {
+    width: 100vw;
+    overflow: hidden;
+    margin-bottom: 0vh;
+  }
+
+  .nav-item a {
+    font-size: 1.4vw;
+    margin-top: 1vh;
+    
+  }
+
+  .newsletters-list {
+    Margin-top: 0vh;
+  }
+}
+
+/* Surface Pro 7 portrait */
+@media only screen and (max-width: 920px) and (max-height: 1380px){
+  .header-box {
+    width: 100vw;
+    height: 12vh;
+  }
+
+  .logo-image-right {
+    width: 10vw;
+    height: 19vh;
+  }
+  
+  .logo {
+    vertical-align: middle;
+    height: 11vh;
+    margin-left: 1vw;
+  }
+  
+  .header-text {
+    width: 73vw;
+    height: 12vh;
+  }
+  
+  .header-text p {
+    margin: 0;
+    padding-top: 2vh;
+    font-size: 4vw;
+    line-height: 4vh;
+    text-shadow: .2vw 0.3vw 0.3vw black;
+  }
+
+  .nav-list {
+    width: 100vw;
+    overflow: hidden;
+    margin-bottom: 0vh;
+  }
+
+  .nav-item a {
+    font-size: 2.6vw;
+    margin: 1vh 0vw 0vw 4vw;
+    padding: 0vw;
+    padding-top: 1.2vh;
+  }
+
+  .newsletters-list {
+    Margin-top: 0vh;
+  }
+}
+
+/* iPad Mini landscape */
+@media only screen and (max-width: 1030px) and (max-height: 775px) {
+  .nav-list {
+    padding: 0vw;
+  }
+
+  .nav-item a {
+    font-size: 1.8vw;
+    margin: 1vh 0vw 0vh 0vw;  
+  }
+}
+
+/* Samsung Galaxy A51 and S20 landscape */
+@media only screen and (max-width: 920px) and (max-height: 420px) {
+  .header-box {
+    width: 100vw;
+  }
+
+  .header-text p {
+    margin: 0;
+    padding-top: 1vh;
+    font-size: 2vw;
+    line-height: 5vh;
+    text-shadow: .2vw 0.3vh 0.3vw black;
+  }
+
+  .nav-list {
+    width: 100vw;
+    height: 7vh;
+    overflow: hidden;
+    margin-bottom: 0vh;
+  }
+
+  .nav-item a {
+    font-size: 1.4vw;
+    margin: 1vh 5vw 0vh 4vw;
+    
+  }
+
+  .newsletters-list {
+    Margin-top: 0vh;
+  }
+}
+
+/* Samsung Galaxy A51 and S20 portrait */
+@media only screen and (max-width: 420px) and (max-height: 920px){
+  .header-box {
+    width: 100vw;
+    height: 8vh;
+  }
+
+  .logo {
+    width: 15vw;
+    height: 8vh;
+  }
+
+  .logo-image-right {
+    vertical-align: middle;
+    height: 7vh;
+    margin-left: 1vw;
+  }
+  
+  .header-text {
+    width: 73vw;
+    height: 10vh;
+  }
+  
+  .header-text p {
+    margin: 0;
+    padding-top: 1vh;
+    font-size: 4vw;
+    line-height: 3vh;
+    text-shadow: .2vw 0.3vw 0.3vw black;
+  }
+
+  .nav-list {
+    width: 100vw;
+    height: 3.5vh;
+    overflow: hidden;
+    margin-bottom: 0vh;
+    padding: 0vw;
+  }
+
+  .nav-item a {
+    font-size: 2.8vw;
+    margin: 1vh 0vw 0vw 4vw;
+    padding: 0vw;
+  }
+
+  .newsletters-list {
+    Margin-top: 0vh;
+  }
+}
+
+/* Samsung Surface Pro landscape */
+@media only screen and (max-width: 730px) and (max-height: 550px) {
+  .header-text p {
+    margin-top: 0vh;
+    padding-top: 1vh;
+    font-size: 3.5vw;
+    line-height: 5vh;
+    text-shadow: .2vw 0.3vw 0.3vw black;
+  }
+
+  .nav-item a {
+    font-size: 2.2vw;
+    margin: 1.5vh 0vw 0vw 4.5vw;
+    padding: 0vw;
+  }
+}
+
+/* Samsung Surface Pro portrait */
+@media only screen and (max-width: 550px) and (max-height: 730px) {
+  .nav-list {
+    width: 100vw;
+    height: 5vh;
+    overflow: hidden;
+    margin: 0vh;
+    padding: 0vw;
+  }
+
+  .nav-item a {
+    font-size: 2.7vw;
+    margin: 1.5vh 0vw 0vw 4.5vw;
+    padding: 0vw 0vw;
+  }
+}
+
